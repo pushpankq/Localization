@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="vc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Localization_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtj-3y-BKN">
+                                <rect key="frame" x="40" y="84" width="334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-rH-Drd">
+                                <rect key="frame" x="40" y="113" width="334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhF-vL-hTX">
+                                <rect key="frame" x="20" y="175" width="374" height="30"/>
+                                <state key="normal" title="Change Language"/>
+                                <connections>
+                                    <action selector="changeLanguageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWZ-Al-qE5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vhF-vL-hTX" firstAttribute="top" secondItem="bgm-rH-Drd" secondAttribute="bottom" constant="41" id="6c4-hv-Fx9"/>
+                            <constraint firstItem="dtj-3y-BKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="8zt-xN-lAy"/>
+                            <constraint firstItem="dtj-3y-BKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="P2i-C2-5I5"/>
+                            <constraint firstItem="vhF-vL-hTX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cLa-py-Ej0"/>
+                            <constraint firstItem="bgm-rH-Drd" firstAttribute="top" secondItem="dtj-3y-BKN" secondAttribute="bottom" constant="8" id="eY3-WM-gGB"/>
+                            <constraint firstItem="bgm-rH-Drd" firstAttribute="trailing" secondItem="dtj-3y-BKN" secondAttribute="trailing" id="gWq-kK-YOi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dtj-3y-BKN" secondAttribute="trailing" constant="40" id="jO1-1P-qgt"/>
+                            <constraint firstItem="bgm-rH-Drd" firstAttribute="leading" secondItem="dtj-3y-BKN" secondAttribute="leading" id="qAC-2F-s0s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vhF-vL-hTX" secondAttribute="trailing" constant="20" id="xT4-N2-mp3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeLanguageButton" destination="vhF-vL-hTX" id="97Y-nJ-JPp"/>
+                        <outlet property="currentLangaugeLabel" destination="bgm-rH-Drd" id="SON-pV-uou"/>
+                        <outlet property="headerLabel" destination="dtj-3y-BKN" id="Par-fZ-Kla"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+    </scenes>
+</document>
